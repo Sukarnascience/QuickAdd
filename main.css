@@ -5,6 +5,9 @@ body {
   background-color: #151a24;
   color: #85b6ff;
   font-family: 'Nunito', sans-serif;
+  background-image: url("./images/cubes.png");
+  background-position: left top;
+  background-repeat: repeat;
 }
 
 a {
@@ -29,5 +32,72 @@ a {
   text-align: center;
   padding: 1px 0;
   font-size: xx-large;
+}
+
+.connect {
+  margin: 80px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 50px 0px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.platform {
+  width: 300px;
+  height: 300px;
+  -webkit-animation: swel 5s linear infinite;
+          animation: swel 5s linear infinite;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes swel {
+  0% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+  50% {
+    -webkit-transform: scale(95%);
+            transform: scale(95%);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+@keyframes swel {
+  0% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+  50% {
+    -webkit-transform: scale(95%);
+            transform: scale(95%);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.pic {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 0px 80px 80px;
+  -webkit-box-shadow: 0px 20px 50px #303647;
+          box-shadow: 0px 20px 50px #303647;
 }
 /*# sourceMappingURL=main.css.map */

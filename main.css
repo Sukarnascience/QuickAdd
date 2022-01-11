@@ -7,6 +7,11 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #85b6ff;
+}
+
 .aboutMe p {
   font-size: xx-large;
   padding: 10px 50px;
